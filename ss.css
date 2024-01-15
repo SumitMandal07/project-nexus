@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: red;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: Cambria;
+}
+nav{
+    background-color: red;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover{
+    background-color: red;
+    color: #000;
+}
+.rest{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.top-left,
+.bottom-left{
+    position: absolute;
+    padding: 2rem;
+    color: white;
+    
+}
+.top-left{
+    top: 2rem;
+    left: 2rem; 
+    font-weight: 600;
+    font-size: 40px;
+}
+.bottom-left{
+    bottom: 3rem;
+    left: 2rem;
+}
+.order-button{
+    display: inline-block;
+    background-color: #ff5c00;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.order-button:hover{
+    background-color: #e65100;
+}
+.bottom-left h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline:none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+.hello{
+    background-color: red; 
+    height: 300px;
+}
+section.about{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+}
+.about .company-info{
+    margin-top: 30px;
+}
+.about h3{
+    margin: 30px 0 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+}
+.about .team{
+    text-align: left;
+}
+.about .team ul{
+    padding-left: 20px;
+}
+.about .row{
+    padding: 0 10px;
+}
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
